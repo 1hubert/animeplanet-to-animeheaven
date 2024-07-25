@@ -45,7 +45,12 @@ function onReady() {
                     button.addEventListener('click', (event) => {
                         event.preventDefault();
                         event.stopPropagation();
+
                         let aniwave_link = 'https://aniwave.to/filter?keyword=' + elm.previousElementSibling.alt.replace(/\s+/g, '+')
+
+                        // Uncomment if you want an Anime Heaven link instead
+                        // let aniwave_link = 'https://animeheaven.me/search.php?s=' + elm.previousElementSibling.alt.replace(/\s+/g, '+')
+                        
                         window.open(aniwave_link, '_blank');
                     });
 
