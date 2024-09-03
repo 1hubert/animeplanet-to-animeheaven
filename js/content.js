@@ -38,7 +38,7 @@ function onReady() {
     cards.forEach((item) => {
         item.addEventListener('mouseover', () => {
             waitForElm('.statusBand').then((elm) => {
-                if (!elm.querySelector('button#aniwave')) {
+                if (!elm.querySelector('button#animeonline')) {
                     // Create the button
                     const button = document.createElement('button');
 
@@ -46,16 +46,13 @@ function onReady() {
                         event.preventDefault();
                         event.stopPropagation();
 
-                        let aniwave_link = 'https://aniwave.to/filter?keyword=' + elm.previousElementSibling.alt.replace(/\s+/g, '+')
-
-                        // Uncomment if you want an Anime Heaven link instead
-                        // let aniwave_link = 'https://animeheaven.me/search.php?s=' + elm.previousElementSibling.alt.replace(/\s+/g, '+')
+                        let animeonline_link = 'https://animeheaven.me/search.php?s=' + elm.previousElementSibling.alt.replace(/\s+/g, '+')
                         
-                        window.open(aniwave_link, '_blank');
+                        window.open(animeonline_link, '_blank');
                     });
 
-                    button.id = 'aniwave';
-                    button.textContent = 'aniwave';
+                    button.id = 'animeonline';
+                    button.textContent = 'AnimeHeaven';
 
                     // Apply styles
                     Object.keys(styles).forEach(key => {
