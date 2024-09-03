@@ -1,6 +1,6 @@
 {
-    "name": "AnimePlanet to AniWave",
-    "description": "Adds a 'Search this anime on AniWave' button to AnimePlanet.",
+    "name": "AnimePlanet to AnimeHeaven",
+    "description": "Adds a 'Search this anime on AnimeHeaven' button to AnimePlanet.",
     "version": "1.0",
     "manifest_version": 2,
     "content_scripts": [
